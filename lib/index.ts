@@ -1,16 +1,29 @@
 import { App } from 'vue'
-import render from 'coder-vform-render'
+import render, { WidgetManager } from 'coder-vform-render'
 //自定义组件导入
-import customerCompoents, { schema as Schema } from './element-plus/index'
+import customerCompoents, { schema } from './element-plus/index'
+import widgetManager from 'coder-vform-render/dist/widgetManager';
 
 
-export const schema = Schema;
+
 
 const installer = {
     install: (app: any) => {
         app.use(render);
         app.use(customerCompoents);
+
+        schema.forEach(element => {
+
+            if (element.type == "picture-upload" || element.type == "file-upload") {
+                WidgetManager.addAdvanceFields(element);
+            }
+            else {
+                widgetManager.addBasicFieldSchema(element);
+            }
+
+        });
     }
+
 }
 
 export default installer
