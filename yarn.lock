@@ -357,10 +357,10 @@
     "sass" "^1.55.0"
     "vue" "^3.2.37"
 
-"coder-vform-render@^0.1.3":
-  "integrity" "sha512-LHrRenc36DH2bWt49+Rd1VY2IybMOaz+SSVWeytaCKwE6r5bdbolfVQ0qry4jvnLen9VCODn1CW/6+ItS2RRkA=="
-  "resolved" "https://zhcoder-npm.pkg.coding.net/coder/npm-pub/coder-vform-render/-/coder-vform-render-0.1.3/0d77c278790365eb912c050dd622eac15154525f.tgz"
-  "version" "0.1.3"
+"coder-vform-render@^0.1.6":
+  "integrity" "sha512-jLY+8pC5j4eShlfN0c+DdRNQ5yzM34e4VMzfySjoh29l/xsebFTSpeHpaTsIV0FnFLCT7fvyCg8QL7AahJy0Rg=="
+  "resolved" "https://zhcoder-npm.pkg.coding.net/coder/npm-pub/coder-vform-render/-/coder-vform-render-0.1.6/3cc85e6864667c82e78e8dee4119c54011ec5dd9.tgz"
+  "version" "0.1.6"
   dependencies:
     "axios" "^0.27.2"
     "coder-vform-render" "^0.0.12"
