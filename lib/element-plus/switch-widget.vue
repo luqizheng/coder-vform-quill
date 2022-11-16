@@ -45,7 +45,7 @@ import {FormItemWrapper, emitter, i18n, fieldMixin } from "coder-vform-render";
 
     },
     components: {
-     /* FormItemWrapper,*/
+     FormItemWrapper
     },
     data() {
       return {

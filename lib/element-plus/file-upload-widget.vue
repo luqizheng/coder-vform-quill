@@ -72,7 +72,7 @@ import {
   emitter,
   i18n,
   fieldMixin,
-  StaticContentWrapper,FormItemWrapper
+  FormItemWrapper,
   util,SvgIcon,translate
 } from "coder-vform-render";
 const deepClone = util.deepClone;
