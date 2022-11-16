@@ -13,7 +13,7 @@
 
 <script>
 
-import {  emitter, i18n, fieldMixin/*,StaticContentWrapper*/ } from "coder-vform-render";
+import {  emitter, i18n, fieldMixin ,StaticContentWrapper } from "coder-vform-render";
 
 
   export default {
@@ -47,7 +47,7 @@ import {  emitter, i18n, fieldMixin/*,StaticContentWrapper*/ } from "coder-vform
 
     },
     components: {
-      /* StaticContentWrapper,*/
+       StaticContentWrapper,
     },
     computed: {
 
