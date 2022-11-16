@@ -23,7 +23,7 @@
 </template>
 
 <script>
- import {/* FormItemWrapper,*/ emitter, i18n, fieldMixin } from "coder-vform-render";
+ import { FormItemWrapper, emitter, i18n, fieldMixin } from "coder-vform-render";
 
   export default {
     name: "select-widget",
@@ -56,7 +56,7 @@
 
     },
     components: {
-     /* FormItemWrapper,*/
+     FormItemWrapper
     },
     data() {
       return {

@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import { /*FormItemWrapper,*/ emitter, i18n, fieldMixin } from "coder-vform-render";
+import { FormItemWrapper, emitter, i18n, fieldMixin } from "coder-vform-render";
   export default {
     name: "color-widget",
     componentName: 'FieldWidget',  //必须固定为FieldWidget，用于接收父级组件的broadcast事件
@@ -43,7 +43,7 @@ import { /*FormItemWrapper,*/ emitter, i18n, fieldMixin } from "coder-vform-rend
 
     },
     components: {
-     /* FormItemWrapper,*/
+       FormItemWrapper
     },
     data() {
       return {

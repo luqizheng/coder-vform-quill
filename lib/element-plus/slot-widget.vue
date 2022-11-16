@@ -14,7 +14,7 @@
 
 <script>
  
-  import { /* StaticContentWrapper,*/ emitter, i18n, fieldMixin } from "coder-vform-render";
+  import {  StaticContentWrapper, emitter, i18n, fieldMixin } from "coder-vform-render";
 
   export default {
     name: "slot-widget",
@@ -47,7 +47,7 @@
 
     },
     components: {
-      /* StaticContentWrapper,*/
+       StaticContentWrapper,
     },
     computed: {
 

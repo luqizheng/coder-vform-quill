@@ -35,7 +35,7 @@
 </template>
 
 <script>
-import {/* FormItemWrapper,*/ emitter, i18n, fieldMixin } from "coder-vform-render";
+import {FormItemWrapper, emitter, i18n, fieldMixin } from "coder-vform-render";
 
 
 export default {
@@ -68,7 +68,7 @@ export default {
     },
   },
   components: {
-   /* FormItemWrapper,*/
+   FormItemWrapper
   },
   data() {
     return {

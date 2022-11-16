@@ -23,7 +23,7 @@
 </template>
 
 <script>
-import {/* FormItemWrapper,*/ emitter, i18n, fieldMixin,SvgIcon } from "coder-vform-render";
+import { FormItemWrapper, emitter, i18n, fieldMixin,SvgIcon } from "coder-vform-render";
 
   export default {
     name: "input-widget",
@@ -56,7 +56,7 @@ import {/* FormItemWrapper,*/ emitter, i18n, fieldMixin,SvgIcon } from "coder-vf
 
     },
     components: {
-     /* FormItemWrapper,*/
+     FormItemWrapper,
      SvgIcon
     },
     data() {

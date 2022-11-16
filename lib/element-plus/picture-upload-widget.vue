@@ -77,7 +77,7 @@
 
 <script>
 import {
- /* FormItemWrapper,*/
+  FormItemWrapper,
   emitter,
   i18n,
   fieldMixin,
@@ -115,8 +115,8 @@ export default {
     },
   },
   components: {
-   /* FormItemWrapper,*/
-   SvgIcon
+   FormItemWrapper
+   ,SvgIcon
   },
   data() {
     return {
