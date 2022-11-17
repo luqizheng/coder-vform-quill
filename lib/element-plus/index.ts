@@ -10,7 +10,7 @@ export default (app: any) => {
   for (const path in modules) {
     let comp = modules[path] as any;
     app.component(comp.name, modules[path])
-    console.log(comp.name, '@element-plus')
+
   }
 
 
@@ -20,12 +20,12 @@ export default (app: any) => {
     let element = schemaFiles[path] as IScheam;
 
     if (element.type == "picture-upload" || element.type == "file-upload") {
-      console.log('add schema', element.type, '@element-plus')
+
       widgetManager.addAdvanceFields(element);
     }
     else {
       widgetManager.addBasicFieldSchema(element);
-      console.log('add schema', element.type, '@element-plus')
+
     }
 
 
