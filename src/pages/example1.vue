@@ -1,8 +1,6 @@
 <template>
   <div>
-    {{widget}}
-    <button @click="show = !show">aaaa</button>
-    <v-form-render v-if="show" :form-json="formJson" ref="vFormRef">
+    <v-form-render :form-json="formJson" ref="vFormRef">
     </v-form-render>
     <el-button type="primary" @click="submitForm">Submit</el-button>
   </div>
@@ -13,7 +11,7 @@ import { ref, reactive, onMounted } from "vue";
 import { ElMessage } from "element-plus";
 import formDemo from "./demo.json";
 import { Widgets } from 'coder-vform-render'
-const widget= ref(Widgets)
+const widget = ref(Widgets)
 /* 注意：formJson是指表单设计器导出的json，此处演示的formJson只是一个空白表单json！！ */
 const show = ref(false);
 const formJson = reactive(formDemo);
