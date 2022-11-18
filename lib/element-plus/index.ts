@@ -1,20 +1,15 @@
 
-import { IScheam, widgetManager } from "coder-vform-render";
+import { IScheam, AddWidget, widgetManager } from "coder-vform-render";
 const schemaFiles = import.meta.glob('./*.js', { eager: true, import: 'default' })
 const modules = import.meta.glob('./*.vue', { eager: true, import: 'default' })
 
+for (const path in modules) {
+
+  let comp = modules[path] as any;
+  AddWidget(comp);
+}
 
 export default (app: any) => {
-
-
-  for (const path in modules) {
-    let comp = modules[path] as any;
-
-    widgetManager.addWidget(comp,comp.name);
-   // app.component(comp.name, modules[path])
-
-  }
-
 
   for (const path in schemaFiles) {
     if (path == "./containerMixin.js")
