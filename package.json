@@ -1,7 +1,7 @@
 {
   "name": "coder-vform-element-plus",
   "private": false,
-  "version": "0.2.1",
+  "version": "0.2.3",
   "type": "module",
   "files": [
     "dist"
@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "axios": "^0.27.2",
-    "coder-vform-render": "0.1.13",
+    "coder-vform-render": "0.2.0",
     "element-plus": "^2.2.4",
     "vue": "^3.2.37"
   },

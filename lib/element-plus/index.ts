@@ -9,7 +9,9 @@ export default (app: any) => {
 
   for (const path in modules) {
     let comp = modules[path] as any;
-    app.component(comp.name, modules[path])
+
+    widgetManager.addWidget(comp,comp.name);
+   // app.component(comp.name, modules[path])
 
   }
 
