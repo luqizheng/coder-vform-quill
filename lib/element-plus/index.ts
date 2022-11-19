@@ -3,22 +3,18 @@ import { IScheam, addWidget, addAdvanceFields, addBasicFieldSchema } from "coder
 const schemaFiles = import.meta.glob('./*.js', { eager: true, import: 'default' })
 
 
-export default (app: any) => {
 
-  for (const path in schemaFiles) {
-    if (path == "./containerMixin.js")
-      continue;
-    let element = schemaFiles[path] as IScheam;
+for (const path in schemaFiles) {
+  if (path == "./containerMixin.js")
+    continue;
+  let element = schemaFiles[path] as IScheam;
 
-    if (element.type == "picture-upload" || element.type == "file-upload") {
+  if (element.type == "picture-upload" || element.type == "file-upload") {
 
-      addAdvanceFields(element);
-    }
-    else {
-      addBasicFieldSchema(element);
-
-    }
-
+    addAdvanceFields(element);
+  }
+  else {
+    addBasicFieldSchema(element);
 
   }
 }
