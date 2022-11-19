@@ -1,5 +1,5 @@
 
-import { IScheam, AddWidget, widgetManager } from "coder-vform-render";
+import { IScheam, addWidget, addAdvanceFields, addBasicFieldSchema } from "coder-vform-render";
 const schemaFiles = import.meta.glob('./*.js', { eager: true, import: 'default' })
 
 
@@ -12,10 +12,10 @@ export default (app: any) => {
 
     if (element.type == "picture-upload" || element.type == "file-upload") {
 
-      widgetManager.addAdvanceFields(element);
+      addAdvanceFields(element);
     }
     else {
-      widgetManager.addBasicFieldSchema(element);
+      addBasicFieldSchema(element);
 
     }
 

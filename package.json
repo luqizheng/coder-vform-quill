@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "axios": "^0.27.2",
-    "coder-vform-render": "^0.2.8",
+    "coder-vform-render": "^0.3.0",
     "element-plus": "^2.2.4",
     "vue": "^3.2.37"
   },
