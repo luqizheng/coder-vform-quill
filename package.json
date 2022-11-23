@@ -1,7 +1,7 @@
 {
   "name": "coder-vform-element-plus",
   "private": false,
-  "version": "0.5.5",
+  "version": "0.6.4",
   "type": "module",
   "files": [
     "dist"
@@ -23,8 +23,9 @@
     "build-type": "vue-tsc --declaration --emitDeclarationOnly "
   },
   "dependencies": {
+    "@ant-design/icons-vue": "^6.1.0",
     "axios": "^0.27.2",
-    "coder-vform-render": "^0.5.5",
+    "coder-vform-render": "^0.6.3",
     "element-plus": "^2.2.4",
     "vue": "^3.2.37"
   },
