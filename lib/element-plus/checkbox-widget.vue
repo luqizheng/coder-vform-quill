@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import { ElCheckbox,ElCheckboxGroup } from "element-plus";
+import { ElCheckbox,ElCheckboxGroup,ElCheckboxButton } from "element-plus";
 import { FormItemWrapper, emitter, i18n, fieldMixin } from "coder-vform-render";
   export default {
     name: "checkbox-widget",
@@ -53,7 +53,7 @@ import { FormItemWrapper, emitter, i18n, fieldMixin } from "coder-vform-render";
 
     },
     components: {
-       FormItemWrapper,ElCheckbox,ElCheckboxGroup
+       FormItemWrapper,ElCheckbox,ElCheckboxGroup,ElCheckboxButton
     },
     data() {
       return {
