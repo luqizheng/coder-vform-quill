@@ -24,7 +24,7 @@
 
 <script>
 import { FormItemWrapper, emitter, i18n, fieldMixin,SvgIcon } from "coder-vform-render";
-
+import { ElInput,ElButton } from "element-plus";
   export default {
     name: "input-widget",
     componentName: 'FieldWidget',  //必须固定为FieldWidget，用于接收父级组件的broadcast事件
@@ -56,7 +56,7 @@ import { FormItemWrapper, emitter, i18n, fieldMixin,SvgIcon } from "coder-vform-
 
     },
     components: {
-     FormItemWrapper,
+     FormItemWrapper,ElInput,ElButton,
      SvgIcon
     },
     data() {

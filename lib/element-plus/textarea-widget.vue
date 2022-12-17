@@ -34,7 +34,7 @@
 
 <script>
 import { FormItemWrapper, emitter, i18n, fieldMixin } from "coder-vform-render";
-
+import { ElInput } from "element-plus";
 export default {
   name: "textarea-widget",
   componentName: "FieldWidget", //必须固定为FieldWidget，用于接收父级组件的broadcast事件
@@ -65,7 +65,7 @@ export default {
     },
   },
   components: {
-    FormItemWrapper,
+    FormItemWrapper,ElInput
   },
   data() {
     return {

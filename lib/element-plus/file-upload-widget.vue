@@ -67,7 +67,7 @@
 </template>
 
 <script>
-
+import { ElUpload } from "element-plus";
 import {
   emitter,
   i18n,
@@ -110,7 +110,7 @@ export default {
     },
   },
   components: {
-    SvgIcon,
+    SvgIcon,ElUpload,
    FormItemWrapper
   },
   data() {

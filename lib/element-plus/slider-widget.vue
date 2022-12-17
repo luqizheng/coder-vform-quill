@@ -13,6 +13,7 @@
 
 <script>
  import {FormItemWrapper, emitter, i18n, fieldMixin } from "coder-vform-render";
+ import { ElSlider } from "element-plus";
   export default {
     name: "slider-widget",
     componentName: 'FieldWidget',  //必须固定为FieldWidget，用于接收父级组件的broadcast事件
@@ -44,7 +45,7 @@
 
     },
     components: {
-      FormItemWrapper,
+      FormItemWrapper,ElSlider
     },
     data() {
       return {

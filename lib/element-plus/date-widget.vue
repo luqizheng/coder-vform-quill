@@ -36,7 +36,7 @@
 
 <script>
 import {FormItemWrapper, emitter, i18n, fieldMixin } from "coder-vform-render";
-
+import { ElDatePicker } from "element-plus";
 
 export default {
   name: "date-widget",
@@ -68,7 +68,7 @@ export default {
     },
   },
   components: {
-   FormItemWrapper
+   FormItemWrapper,ElDatePicker
   },
   data() {
     return {

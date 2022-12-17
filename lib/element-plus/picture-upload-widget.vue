@@ -76,6 +76,7 @@
 </template>
 
 <script>
+import { ElImage,ElUpload } from "element-plus";
 import {
   FormItemWrapper,
   emitter,
@@ -116,7 +117,7 @@ export default {
   },
   components: {
    FormItemWrapper
-   ,SvgIcon
+   ,SvgIcon,ElImage,ElUpload
   },
   data() {
     return {

@@ -12,6 +12,7 @@
 
 <script>
 import { FormItemWrapper, emitter, i18n, fieldMixin } from "coder-vform-render";
+import { ElColorPicker } from "element-plus";
   export default {
     name: "color-widget",
     componentName: 'FieldWidget',  //必须固定为FieldWidget，用于接收父级组件的broadcast事件
@@ -43,7 +44,7 @@ import { FormItemWrapper, emitter, i18n, fieldMixin } from "coder-vform-render";
 
     },
     components: {
-       FormItemWrapper
+       FormItemWrapper,ElColorPicker
     },
     data() {
       return {

@@ -42,7 +42,7 @@
 
 <script>
 import { FormItemWrapper, emitter, i18n, fieldMixin } from "coder-vform-render";
-
+import { ElDatePicker } from "element-plus";
 export default {
   name: "date-range-widget",
   componentName: "FieldWidget", //必须固定为FieldWidget，用于接收父级组件的broadcast事件
@@ -73,7 +73,7 @@ export default {
     },
   },
   components: {
-    FormItemWrapper,
+    FormItemWrapper,ElDatePicker
   },
   data() {
     return {
