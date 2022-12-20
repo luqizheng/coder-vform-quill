@@ -44,7 +44,7 @@
 <script>
 import { FormItemWrapper, emitter, i18n, fieldMixin } from "coder-vform-render";
 import { ElDatePicker,ElConfigProvider } from "element-plus";
-import { zhCn } from "element-plus/es/locale/lang/zh-cn";
+import zhCn from "element-plus/es/locale/lang/zh-cn";
 export default {
   name: "date-range-widget",
   componentName: "FieldWidget", //必须固定为FieldWidget，用于接收父级组件的broadcast事件
