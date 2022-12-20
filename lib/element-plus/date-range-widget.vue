@@ -12,6 +12,7 @@
     :sub-form-row-id="subFormRowId"
   >
     <div :class="[!!field.options.autoFullWidth ? 'auto-full-width' : '']">
+      <ElConfigProvider :locale="local">
       <el-date-picker
         ref="fieldEditor"
         :type="field.options.type"
@@ -35,14 +36,15 @@
         @blur="handleBlurCustomEvent"
         @change="handleChangeEvent"
       >
-      </el-date-picker>
+      </el-date-picker></ElConfigProvider>
     </div>
   </form-item-wrapper>
 </template>
 
 <script>
 import { FormItemWrapper, emitter, i18n, fieldMixin } from "coder-vform-render";
-import { ElDatePicker } from "element-plus";
+import { ElDatePicker,ElConfigProvider } from "element-plus";
+import { zhCn } from "element-plus/es/locale/lang/zh-cn";
 export default {
   name: "date-range-widget",
   componentName: "FieldWidget", //必须固定为FieldWidget，用于接收父级组件的broadcast事件
@@ -73,13 +75,14 @@ export default {
     },
   },
   components: {
-    FormItemWrapper,ElDatePicker
+    FormItemWrapper,ElDatePicker,ElConfigProvider
   },
   data() {
     return {
       oldFieldValue: null, //field组件change之前的值
       fieldModel: null,
       rules: [],
+      local:zhCn
     };
   },
   computed: {},
