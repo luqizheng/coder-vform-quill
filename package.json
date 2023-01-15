@@ -1,7 +1,7 @@
 {
-  "name": "coder-vform-element-plus",
+  "name": "coder-vform-quill",
   "private": false,
-  "version": "1.1.5",
+  "version": "1.0.0-preview",
   "type": "module",
   "files": [
     "dist"
@@ -23,9 +23,10 @@
     "build-type": "vue-tsc --declaration --emitDeclarationOnly "
   },
   "dependencies": {
-    "coder-vform-render": "^1.1.3",
-    "element-plus": "^2.2.4",
-    "vue": "^3.2.37"
+    "coder-vform-render": "^1.1.6",
+    "coder-vue3-quill": "^0.0.3",
+    "vue": "^3.2.37",
+    "vue3-quill": "^0.3.0"
   },
   "devDependencies": {
     "@ant-design/icons-vue": "^6.1.0",

@@ -1,16 +1,13 @@
 
 //自定义组件导入
-import setup from './element-plus/index'
-import { addWidget } from 'coder-vform-render';
-const modules = import.meta.glob('./Element-plus/*.vue', { eager: true, import: 'default' })
 
+import { addAdvanceFields, addWidget } from 'coder-vform-render';
+import quill from './quill/index'
+import quillWidget from './quill/quill-widget.vue'
 const installer = {
   install: (app: any) => {
-    setup();
-    for (const path in modules) {
-      let comp = modules[path] as any;
-      addWidget(comp);
-    }
+    addWidget(quillWidget)
+    addAdvanceFields(quill);
   }
 }
 export default installer
