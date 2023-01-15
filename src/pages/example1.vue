@@ -8,7 +8,7 @@
 
 <script setup>
 import { ref, reactive, onMounted } from "vue";
-import { ElMessage,ElButton } from "element-plus";
+import { ElMessage, ElButton } from "element-plus";
 import formDemo from "./demo.json";
 
 
