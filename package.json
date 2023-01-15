@@ -1,7 +1,7 @@
 {
   "name": "coder-vform-quill",
   "private": false,
-  "version": "1.0.0-preview",
+  "version": "1.0.0-preview1",
   "type": "module",
   "files": [
     "dist"
@@ -23,6 +23,8 @@
     "build-type": "vue-tsc --declaration --emitDeclarationOnly "
   },
   "dependencies": {
+    "coder-vform-designer": "^1.1.2",
+    "coder-vform-quill": "^1.0.0-preview1",
     "coder-vform-render": "^1.1.6",
     "coder-vue3-quill": "^0.0.3",
     "vue": "^3.2.37",
